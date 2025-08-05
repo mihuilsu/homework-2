@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>S.T.A.L.K.E.R.</title>
+	<link rel="shortcut icon" href="../images/stalker-favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<nav class="navbar">
+			<ul class="navlist">
+				<li class="navlist-item">
+					<a class="navlist-item-link" href="../index.html">Homepage</a>
+				</li>
+				<li class="navlist-item">
+					<a class="navlist-item-link" href="articles.html">Articles</a>
+				</li>
+				<li class="navlist-item">
+					<a class="navlist-item-link" href="catalogue.html">Catalogue</a>
+				</li>
+				<li class="navlist-item">
+					<a class="navlist-item-link" href="contacts.html">Contacts</a>
+				</li>
+				<li class="navlist-item">
+					<a class="navlist-item-link" href="gallery.html">Gallery</a>
+				</li>
+				<li class="navlist-item">
+					<a class="navlist-item-link" href="navigation.html">Navigation</a>
+				</li>
+				<li class="navlist-item">
+					<a class="navlist-item-link current" href="registration.html">Registration</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="form-container">
+		<form action="https://tests.fomenko.top/echo/index.php" method="GET">
+			<fieldset>
+				<legend>User Information</legend>
+
+				<div class="form-group">
+					<input id="login" name="login" type="text" placeholder="Username" minlength="3" maxlength="10"
+						required>
+				</div>
+
+				<div class="form-group">
+					<input id="passw" name="passw" type="password" placeholder="Password" minlength="3" maxlength="10"
+						required>
+				</div>
+
+				<div class="form-group">
+					<input id="age" name="age" type="number" placeholder="Age" min="1" max="122">
+				</div>
+
+				<div class="form-group">
+					<input id="email" name="email" type="email" placeholder="Email">
+				</div>
+
+				<div class="form-group">
+					<input id="tel" name="tel" type="tel" placeholder="Phone">
+				</div>
+
+				<div class="form-group">
+					<input id="search" name="search" type="search" placeholder="Website">
+				</div>
+
+				<div class="form-group">
+					<label for="date">Select a Date</label>
+					<input id="date" name="date" type="date">
+				</div>
+
+				<div class="form-group">
+					<label for="month">Select a Month</label>
+					<input id="month" name="month" type="month">
+				</div>
+
+				<div class="form-group">
+					<label for="file">Upload a File</label>
+					<input id="file" name="file" type="file">
+				</div>
+
+				<div class="hidden">
+					<input name="hid" type="hidden" value="hidden value">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Select the language</legend>
+				<div class="form-group-sm">
+					<input id="ua" name="kit-ua" type="checkbox" value="ua">
+					<label for="ua">Ukrainian</label>
+				</div>
+
+				<div class="form-group-sm">
+					<input id="it" name="kit-it" type="checkbox" value="it">
+					<label for="it">Italian</label>
+				</div>
+
+				<div class="form-group-sm">
+					<input id="gr" name="kit-gr" type="checkbox" value="gr">
+					<label for="gr">Georgian</label>
+				</div>
+
+				<div class="form-group-sm">
+					<input id="jp" name="kit-jp" type="checkbox" value="jp">
+					<label for="jp">Japanese</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Choose your gender</legend>
+				<div class="form-group-sm">
+					<input id="male" name="gender" type="radio" value="male">
+					<label for="male">Male</label>
+				</div>
+
+				<div class="form-group-sm">
+					<input id="female" name="gender" type="radio" value="female">
+					<label for="female">Female</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Car realease year</legend>
+
+				<div class="form-group">
+					<select id="sel" name="sel" multiple size="10">
+						<option selected disabled value="">Choose a year</option>
+						<option value="2011">2011</option>
+						<option value="2012">2012</option>
+						<option value="2013">2013</option>
+						<option value="2014">2014</option>
+						<option value="2015">2015</option>
+						<option value="2016">2016</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+					</select>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Additional Information</legend>
+				<div class="form-group">
+					<textarea name="txt" id="txt" placeholder="Type your message..."></textarea>
+				</div>
+			</fieldset>
+
+			<div class="form-group">
+				<button class="btn" type="submit">Submit</button>
+			</div>
+			<div class="form-group">
+				<button class="btn" type="reset">Reset</button>
+			</div>
+			<div class="form-group">
+				<button class="btn dangerous" type="button" onclick="triggerFun()">Don't click here</button>
+			</div>
+		</form>
+	</main>
+	<script src="../script/main.js"></script>
+</body>
+
+</html>
